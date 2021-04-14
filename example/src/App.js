@@ -1,10 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-import { ExampleComponent } from 'foxstrap'
-import 'foxstrap/dist/index.css'
+import { Example, Button } from 'foxstrap';
+import 'foxstrap/dist/index.css';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return (
+    <React.Fragment>
+      <Example text='Create React Library Example 😄' />
+      <Button color='blue' className='hello-btn'>
+        Hello world!
+      </Button>
+    </React.Fragment>
+  );
+};
 
-export default App
+export default App;
