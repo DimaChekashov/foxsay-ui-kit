@@ -10,11 +10,13 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/docs" element={<Docs/>}/>
-        <Route path="/about" element={<About/>}/>
-      </Routes>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/docs" element={<Docs/>}/>
+          <Route path="/about" element={<About/>}/>
+        </Routes>
+      </div>
     </div>
   );
 }

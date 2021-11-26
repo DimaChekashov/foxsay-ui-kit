@@ -1,4 +1,58 @@
 .docs {
-  min-height: 200px;
-  background-color: green;
+    display: flex;
+    padding: 40px 0 50px;
+}
+
+.docs-sidebar {
+    width: 100%;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.docs-list-title {
+    margin: 0;
+    font-size: 1.25rem;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.72);
+    font-weight: 500;
+    color: #fff;
+}
+
+.docs-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    li {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    a {
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        color: rgba(0, 0, 0, 0.603);
+        font-size: 1.15rem;
+        transition: background-color 0.3s ease;
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.docs-chart {
+    margin-left: 30px;
+    width: 100%;
+}
+
+.docs-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+.docs-desc {
+    font-size: 1.125rem;
+    margin: 0 0 15px;
 }
