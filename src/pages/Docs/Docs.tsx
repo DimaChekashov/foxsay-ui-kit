@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Button, Tag } from '../../docs-components';
 
 import './Docs.scss';
 
@@ -19,6 +20,8 @@ const Docs = () => {
       <div className="docs-chart">
         <h3 className="docs-title">Test Title</h3>
         <p className="docs-desc">Test description</p>
+        <Button/>
+        <Tag/>
       </div>
     </div>
   );
