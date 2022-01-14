@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Home.scss';
 
-const Home = () => {
+const Home = (): JSX.Element => {
   return (
     <div className="home">
       <h2 className="home-title">Build fast, responsive sites with foxsay-ui-kit</h2>

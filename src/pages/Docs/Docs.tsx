@@ -4,7 +4,7 @@ import { Button, Tag } from '../../docs-components';
 
 import './Docs.scss';
 
-const Docs = () => {
+const Docs = (): JSX.Element => {
   return (
     <div className="docs">
       <div className="docs-sidebar">

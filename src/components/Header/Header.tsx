@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 import logo from "../../logo.svg";
 
-const Header = () => {
+const Header = (): JSX.Element => {
   return (
     <div className="header">
       <div className="header-container">
