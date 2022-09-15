@@ -1,14 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import {Link} from "react-router-dom";
 
-import './Home.scss';
+import styles from "./Home.module.scss";
 
-const Home = (): JSX.Element => {
+const Home: React.FC = () => {
   return (
-    <div className="home">
-      <h2 className="home-title">Build fast, responsive sites with foxsay-ui-kit</h2>
-      <p className="home-desc">Quickly design and customize responsive mobile-first sites with foxsay-ui-kit.</p>
-      <Link to="docs" className="home-link">Get started</Link>
+    <div className={styles.home}>
+      <h2 className={styles.homeTitle}>Build fast, responsive sites with foxsay-ui-kit</h2>
+      <p className={styles.homeDesc}>Quickly design and customize responsive mobile-first sites with foxsay-ui-kit.</p>
+      <Link to="docs" className={styles.homeLink}>
+        Get started
+      </Link>
     </div>
   );
 };

@@ -1,12 +1,10 @@
 .about {
-    padding: 30px 0 40px;
-}
-
-.about-title {
+  padding: 30px 0 40px;
+  &Title {
     font-size: 2.5rem;
     margin: 0 0 20px;
-}
-
-.about-desc {
+  }
+  &Desc {
     font-size: 1.25rem;
+  }
 }

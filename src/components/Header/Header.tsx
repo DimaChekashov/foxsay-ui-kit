@@ -1,21 +1,39 @@
-import React from 'react';
+import React from "react";
 
-import './Header.scss';
-import { Link, NavLink } from 'react-router-dom';
+import {Link, NavLink} from "react-router-dom";
 
 import logo from "../../logo.svg";
 
+import styles from "./Header.module.scss";
+
 const Header = (): JSX.Element => {
   return (
-    <div className="header">
-      <div className="header-container">
+    <div className={styles.header}>
+      <div className={styles.headerContainer}>
         <Link to="/">
-          <img src={logo} alt="Logo" className="header-logo"/>
+          <img src={logo} alt="Logo" className={styles.headerLogo} />
         </Link>
-        <ul className="header-nav">
-          <li><NavLink to="/" className="nav-link">Home</NavLink></li>
-          <li><NavLink to="/docs" className="nav-link">Docs</NavLink></li>
-          <li><NavLink to="/about" className="nav-link">About us</NavLink></li>
+        <ul className={styles.headerNav}>
+          <li>
+            <NavLink to="/components" className={styles.headerNavLink}>
+              Components
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/templates" className={styles.headerNavLink}>
+              Templates
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/docs" className={styles.headerNavLink}>
+              Documentation
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={styles.headerNavLink}>
+              About us
+            </NavLink>
+          </li>
         </ul>
       </div>
     </div>

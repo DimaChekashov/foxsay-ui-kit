@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import './About.scss';
+import styles from "./About.module.scss";
 
-const About = () => {
+const About: React.FC = () => {
   return (
-    <div className="about">
-      <h3 className="about-title">We're on a mission to make building UIs more accessible</h3>
-      <p className="about-desc">Our mission is to empower anyone to build UIs, faster. We're reducing the entry barrier, making design skills accessible.</p>
+    <div className={styles.about}>
+      <h3 className={styles.aboutTitle}>We're on a mission to make building UIs more accessible</h3>
+      <p className={styles.aboutDesc}>
+        Our mission is to empower anyone to build UIs, faster. We're reducing the entry barrier, making design skills
+        accessible.
+      </p>
     </div>
   );
 };

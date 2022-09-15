@@ -1,27 +1,37 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Tag } from '../../docs-components';
+import React from "react";
+import {Link} from "react-router-dom";
+import {Button, Tag} from "../../docs-components";
 
-import './Docs.scss';
+import styles from "./Docs.module.scss";
 
-const Docs = (): JSX.Element => {
+const Docs: React.FC = () => {
   return (
-    <div className="docs">
-      <div className="docs-sidebar">
-        <h3 className="docs-list-title">Title</h3>
-        <ul className="docs-list">
-          <li><Link to="/">Test</Link></li>
-          <li><Link to="/">Test</Link></li>
-          <li><Link to="/">Test</Link></li>
-          <li><Link to="/">Test</Link></li>
-          <li><Link to="/">Test</Link></li>
+    <div className={styles.docs}>
+      <div className={styles.docsSidebar}>
+        <h3 className={styles.docsListTitle}>Title</h3>
+        <ul className={styles.docsList}>
+          <li>
+            <Link to="/">Test</Link>
+          </li>
+          <li>
+            <Link to="/">Test</Link>
+          </li>
+          <li>
+            <Link to="/">Test</Link>
+          </li>
+          <li>
+            <Link to="/">Test</Link>
+          </li>
+          <li>
+            <Link to="/">Test</Link>
+          </li>
         </ul>
       </div>
-      <div className="docs-chart">
-        <h3 className="docs-title">Test Title</h3>
-        <p className="docs-desc">Test description</p>
-        <Button/>
-        <Tag/>
+      <div className={styles.docsChart}>
+        <h3 className={styles.docsTitle}>Test Title</h3>
+        <p className={styles.docsDesc}>Test description</p>
+        <Button />
+        <Tag />
       </div>
     </div>
   );
